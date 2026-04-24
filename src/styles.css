@@ -53,6 +53,7 @@
 :root,
 .dark {
   --radius: 0.25rem;
+  color-scheme: dark;
 
   /* Vibe brand: deep navy-charcoal surfaces, white type, lime-green accent */
   --background: oklch(0.22 0.018 252);
@@ -85,6 +86,43 @@
   --border: oklch(0.36 0.018 252);
   --input: oklch(0.36 0.018 252);
   --ring: oklch(0.84 0.16 130);
+}
+
+/* Light "tan" mode — warm cream surfaces, deep ink type, lime accent retained */
+.light {
+  --radius: 0.25rem;
+  color-scheme: light;
+
+  --background: oklch(0.94 0.022 80);
+  --foreground: oklch(0.24 0.015 60);
+  --cream: oklch(0.97 0.018 80);
+  --surface: oklch(0.91 0.025 78);
+
+  --card: oklch(0.96 0.02 80);
+  --card-foreground: oklch(0.24 0.015 60);
+  --popover: oklch(0.96 0.02 80);
+  --popover-foreground: oklch(0.24 0.015 60);
+
+  --primary: oklch(0.24 0.015 60);
+  --primary-foreground: oklch(0.97 0.018 80);
+
+  --secondary: oklch(0.88 0.025 78);
+  --secondary-foreground: oklch(0.24 0.015 60);
+
+  --muted: oklch(0.88 0.025 78);
+  --muted-foreground: oklch(0.42 0.018 65);
+
+  /* Slightly deeper lime so it reads on warm cream */
+  --accent: oklch(0.66 0.17 130);
+  --accent-foreground: oklch(0.97 0.018 80);
+  --gold: oklch(0.58 0.16 130);
+
+  --destructive: oklch(0.55 0.21 22);
+  --destructive-foreground: oklch(0.97 0.018 80);
+
+  --border: oklch(0.82 0.025 75);
+  --input: oklch(0.82 0.025 75);
+  --ring: oklch(0.58 0.16 130);
 }
 
 @layer base {
