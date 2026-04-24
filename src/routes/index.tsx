@@ -1,10 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImage from "@/assets/products/hero-display.jpg";
 import showcaseImage from "@/assets/products/showcase.jpg";
-import boxesImage from "@/assets/products/boxes-hero.jpg";
-import glassImage from "@/assets/products/glass-hero.jpg";
-import mylarImage from "@/assets/products/mylar-hero.jpg";
-import tinsImage from "@/assets/products/tins-hero.jpg";
+import { CategoryGrid } from "@/components/site/CategoryGrid";
+import { allFinishes } from "@/lib/products";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -24,18 +22,6 @@ export const Route = createFileRoute("/")({
   }),
   component: Index,
 });
-
-const categories = [
-  { label: "Folding Cartons", img: boxesImage },
-  { label: "Mylar Bags", img: mylarImage },
-  { label: "Glass Jars", img: glassImage },
-  { label: "CR Tins", img: tinsImage },
-];
-
-const finishes = [
-  "Spot UV", "Foil Stamp", "Emboss", "Soft Touch",
-  "Metallic", "Holographic", "Window Die-Cut", "Kraft", "Grit Touch",
-];
 
 function Index() {
   return (
@@ -63,13 +49,13 @@ function Index() {
             shelf.
           </p>
           <div className="mt-12 flex flex-wrap items-center gap-8">
-            <Link
-              to="/products"
+            <a
+              href="#categories"
               className="group inline-flex items-center gap-3 eyebrow border border-foreground px-7 py-4 hover:bg-foreground hover:text-background transition-colors"
             >
               Explore Products
-              <span className="transition-transform group-hover:translate-x-1">→</span>
-            </Link>
+              <span className="transition-transform group-hover:translate-y-0.5">↓</span>
+            </a>
             <Link
               to="/contact"
               className="eyebrow text-muted-foreground hover:text-gold transition-colors border-b border-transparent hover:border-gold pb-1"
@@ -80,54 +66,30 @@ function Index() {
         </div>
       </section>
 
-      {/* CATEGORY STRIP */}
-      <section className="container-vibe py-24 md:py-32">
+      {/* ALL CATEGORIES */}
+      <section id="categories" className="container-vibe py-24 md:py-32 scroll-mt-24">
         <div className="grid md:grid-cols-12 gap-10 mb-16 items-end">
-          <div className="md:col-span-7">
+          <div className="md:col-span-8">
             <p className="eyebrow text-gold mb-5">The Range</p>
             <h2 className="font-display text-4xl md:text-6xl leading-tight">
               Eight categories.<br />
               <span className="italic text-muted-foreground">One trusted source.</span>
             </h2>
           </div>
-          <div className="md:col-span-5 md:text-right">
-            <Link
-              to="/products"
-              className="eyebrow border-b border-gold pb-1 hover:text-gold transition-colors"
-            >
-              View Full Catalog →
-            </Link>
+          <div className="md:col-span-4 md:text-right text-muted-foreground">
+            <p className="max-w-xs md:ml-auto">
+              Tap any category to see the full lineup, sizes, and finish options.
+            </p>
           </div>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-          {categories.map((c) => (
-            <Link
-              key={c.label}
-              to="/products"
-              className="group relative aspect-[3/4] overflow-hidden bg-surface"
-            >
-              <img
-                src={c.img}
-                alt={c.label}
-                className="absolute inset-0 h-full w-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <p className="font-display text-xl md:text-2xl">{c.label}</p>
-                <p className="eyebrow text-gold mt-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                  View →
-                </p>
-              </div>
-            </Link>
-          ))}
-        </div>
+        <CategoryGrid />
       </section>
 
       {/* MANIFESTO */}
       <section className="border-y border-border bg-surface/40">
         <div className="container-vibe py-24 md:py-36 grid md:grid-cols-12 gap-12 items-center">
-          <div className="md:col-span-7 md:col-start-1">
+          <div className="md:col-span-7">
             <p className="eyebrow text-gold mb-6">Our Promise</p>
             <p className="font-display text-3xl md:text-5xl leading-tight">
               Every box, jar, and pouch is a <span className="italic">first impression</span> —
@@ -159,7 +121,7 @@ function Index() {
         </div>
         <div className="hairline mb-10" />
         <div className="flex flex-wrap gap-x-10 gap-y-6">
-          {finishes.map((f) => (
+          {allFinishes.map((f) => (
             <span key={f} className="font-display text-2xl md:text-3xl text-muted-foreground hover:text-gold transition-colors cursor-default">
               {f}
             </span>
