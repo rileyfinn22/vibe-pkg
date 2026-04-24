@@ -110,7 +110,7 @@
   --secondary-foreground: oklch(0.24 0.015 60);
 
   --muted: oklch(0.88 0.025 78);
-  --muted-foreground: oklch(0.42 0.018 65);
+  --muted-foreground: oklch(0.36 0.02 65);
 
   /* Slightly deeper lime so it reads on warm cream */
   --accent: oklch(0.66 0.17 130);
