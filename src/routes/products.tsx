@@ -93,15 +93,6 @@ function Products() {
                     className="h-full w-full object-cover"
                   />
                 </div>
-                <div className="mt-6">
-                  <Link
-                    to="/products/$slug"
-                    params={{ slug: category.slug }}
-                    className="eyebrow border-b border-gold pb-1 hover:text-gold transition-colors"
-                  >
-                    View details →
-                  </Link>
-                </div>
               </div>
             </div>
 
