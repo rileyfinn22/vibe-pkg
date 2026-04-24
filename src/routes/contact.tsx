@@ -8,7 +8,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Talk to VibePKG about custom cannabis packaging. Call 801.875.8581 or email hello@vibepkg.com.",
+          "Talk to VibePKG about custom cannabis packaging. Call 801.875.8581 or email info@vibepkg.com.",
       },
       { property: "og:title", content: "Contact VibePKG" },
       {
@@ -39,13 +39,13 @@ function Contact() {
       <section className="container-vibe pb-24">
         <div className="grid md:grid-cols-2 gap-4 md:gap-6">
           <a
-            href="mailto:hello@vibepkg.com?subject=VibePKG%20Quote%20Request"
+            href="mailto:info@vibepkg.com?subject=VibePKG%20Quote%20Request"
             className="group block p-10 md:p-12 border border-border hover:border-gold transition-colors"
           >
             <Mail className="text-gold mb-8" size={28} strokeWidth={1.25} />
             <p className="eyebrow text-muted-foreground mb-3">Email</p>
             <p className="font-display text-3xl md:text-4xl group-hover:text-gold transition-colors break-all">
-              hello@vibepkg.com
+              info@vibepkg.com
             </p>
             <p className="mt-6 eyebrow text-muted-foreground group-hover:text-gold transition-colors">
               Send a message →

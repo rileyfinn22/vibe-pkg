@@ -36,8 +36,8 @@ export function Footer() {
               </a>
             </li>
             <li>
-              <a href="mailto:hello@vibepkg.com" className="hover:text-gold transition-colors">
-                hello@vibepkg.com
+              <a href="mailto:info@vibepkg.com" className="hover:text-gold transition-colors">
+                info@vibepkg.com
               </a>
             </li>
             <li className="text-muted-foreground">@vibepkg</li>
