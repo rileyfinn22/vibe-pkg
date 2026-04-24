@@ -8,7 +8,7 @@ import tinsHero from "@/assets/products/tins-hero.jpg";
 
 
 export type Category = {
-  slug: "cartons" | "boxes" | "mylar" | "tubes" | "glass" | "labels" | "tins" | "compliance";
+  slug: "cartons" | "boxes" | "mylar" | "tubes" | "glass" | "labels" | "tins";
   num: string;
   shortLabel: string;
   title: string;
