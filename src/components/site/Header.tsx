@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Logo } from "./Logo";
 
 const links = [
   { to: "/products" as const, label: "Products" },
@@ -30,10 +31,14 @@ export function Header() {
       <div className="container-vibe flex h-16 md:h-20 items-center justify-between">
         <Link
           to="/"
-          className="font-display text-xl md:text-2xl tracking-tight text-foreground"
+          className="flex items-center gap-3"
           onClick={() => setOpen(false)}
+          aria-label="Vibe Packaging — Home"
         >
-          Vibe<span className="text-gold">PKG</span>
+          <Logo className="h-9 md:h-11" />
+          <span className="hidden sm:inline eyebrow text-muted-foreground border-l border-border pl-3">
+            Packaging
+          </span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">

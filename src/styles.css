@@ -54,36 +54,37 @@
 .dark {
   --radius: 0.25rem;
 
-  /* Matte black surfaces, cream type, soft gold accent */
-  --background: oklch(0.14 0.003 230);
-  --foreground: oklch(0.94 0.012 85);
-  --cream: oklch(0.94 0.012 85);
-  --surface: oklch(0.18 0.004 230);
+  /* Vibe brand: deep navy-charcoal surfaces, white type, lime-green accent */
+  --background: oklch(0.22 0.018 252);
+  --foreground: oklch(0.98 0 0);
+  --cream: oklch(0.98 0 0);
+  --surface: oklch(0.27 0.018 252);
 
-  --card: oklch(0.18 0.004 230);
-  --card-foreground: oklch(0.94 0.012 85);
-  --popover: oklch(0.18 0.004 230);
-  --popover-foreground: oklch(0.94 0.012 85);
+  --card: oklch(0.27 0.018 252);
+  --card-foreground: oklch(0.98 0 0);
+  --popover: oklch(0.27 0.018 252);
+  --popover-foreground: oklch(0.98 0 0);
 
-  --primary: oklch(0.94 0.012 85);
-  --primary-foreground: oklch(0.14 0.003 230);
+  --primary: oklch(0.98 0 0);
+  --primary-foreground: oklch(0.22 0.018 252);
 
-  --secondary: oklch(0.22 0.004 230);
-  --secondary-foreground: oklch(0.94 0.012 85);
+  --secondary: oklch(0.31 0.018 252);
+  --secondary-foreground: oklch(0.98 0 0);
 
-  --muted: oklch(0.22 0.004 230);
-  --muted-foreground: oklch(0.66 0.01 85);
+  --muted: oklch(0.31 0.018 252);
+  --muted-foreground: oklch(0.74 0.012 252);
 
-  --accent: oklch(0.78 0.09 80);
-  --accent-foreground: oklch(0.14 0.003 230);
-  --gold: oklch(0.78 0.09 80);
+  /* Vibe lime green */
+  --accent: oklch(0.84 0.16 130);
+  --accent-foreground: oklch(0.22 0.018 252);
+  --gold: oklch(0.84 0.16 130);
 
   --destructive: oklch(0.62 0.21 22);
   --destructive-foreground: oklch(0.96 0.01 85);
 
-  --border: oklch(0.28 0.005 230);
-  --input: oklch(0.28 0.005 230);
-  --ring: oklch(0.78 0.09 80);
+  --border: oklch(0.36 0.018 252);
+  --input: oklch(0.36 0.018 252);
+  --ring: oklch(0.84 0.16 130);
 }
 
 @layer base {
