@@ -194,28 +194,6 @@ export const categories: Category[] = [
       { name: "Window Tin", spec: "Clear panel" },
     ],
   },
-  {
-    slug: "compliance",
-    num: "08",
-    shortLabel: "Compliance",
-    title: "Compliance Labels",
-    tagline: "State, lab, CR & serialization",
-    blurb:
-      "State compliance, lab testing, serialization and CR certification — our team helps navigate state-specific requirements.",
-    longDescription:
-      "Cannabis labeling is complicated — and the rules change by state. Our team helps you navigate compliance from THC warnings and state-specific symbols to lab testing, ingredient and nutrition panels, tamper-evident seals, serialization, and the universal cannabis symbol. Get to market faster, with confidence.",
-    image: complianceHero,
-    items: [
-      { name: "THC Warning Label" },
-      { name: "State Compliance Label" },
-      { name: "Lab Testing / COA Label" },
-      { name: "Ingredient / Nutrition Label" },
-      { name: "Tamper-Evident Seal" },
-      { name: "Serialization / Tracking" },
-      { name: "CR Certification Badge" },
-      { name: "Universal Cannabis Symbol" },
-    ],
-  },
 ];
 
 export const allFinishes = [
