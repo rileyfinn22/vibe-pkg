@@ -38,7 +38,7 @@ function Index() {
         </div>
 
         <div className="container-vibe relative z-10 pb-20 md:pb-32 pt-32">
-          <p className="eyebrow text-gold mb-6">Cannabis Packaging · Est. Vibe</p>
+          
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] max-w-5xl">
             Premium packaging,<br />
             <span className="italic text-gold">crafted for cannabis.</span>
