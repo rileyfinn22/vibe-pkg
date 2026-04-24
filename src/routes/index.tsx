@@ -46,7 +46,7 @@ function Index() {
           <p className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed">
             We cultivate partnerships, not shopping carts. From first concept to
             final pallet, VibePKG works alongside your brand to engineer
-            packaging worth remembering — at every scale.
+            packaging worth remembering - at every scale.
           </p>
           <div className="mt-12 flex flex-wrap items-center gap-8">
             <a
