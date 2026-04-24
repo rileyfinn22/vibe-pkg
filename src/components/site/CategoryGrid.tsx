@@ -21,7 +21,6 @@ export function CategoryGrid({ exclude }: { exclude?: string }) {
           <div className="absolute top-5 left-6 eyebrow text-gold">{c.num}</div>
           <div className="absolute bottom-0 left-0 right-0 p-6">
             <p className="font-display text-xl md:text-2xl leading-tight">{c.shortLabel}</p>
-            <p className="text-xs text-muted-foreground mt-1">{c.tagline}</p>
             <p className="eyebrow text-gold mt-3 opacity-0 group-hover:opacity-100 transition-opacity">
               View →
             </p>
