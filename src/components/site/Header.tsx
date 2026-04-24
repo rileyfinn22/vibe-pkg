@@ -55,21 +55,24 @@ export function Header() {
           ))}
         </nav>
 
-        <a
-          href="tel:8018758581"
-          className="hidden md:inline eyebrow text-muted-foreground hover:text-gold transition-colors"
-        >
-          801.875.8581
-        </a>
+        <div className="flex items-center gap-3 md:gap-5">
+          <a
+            href="tel:8018758581"
+            className="hidden md:inline eyebrow text-muted-foreground hover:text-gold transition-colors"
+          >
+            801.875.8581
+          </a>
+          <ThemeToggle className="hidden md:inline-flex" />
 
-        <button
-          type="button"
-          aria-label="Menu"
-          className="md:hidden p-2 -mr-2 text-foreground"
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? <X size={20} /> : <Menu size={20} />}
-        </button>
+          <button
+            type="button"
+            aria-label="Menu"
+            className="md:hidden p-2 -mr-2 text-foreground"
+            onClick={() => setOpen((v) => !v)}
+          >
+            {open ? <X size={20} /> : <Menu size={20} />}
+          </button>
+        </div>
       </div>
 
       {open && (
@@ -89,6 +92,9 @@ export function Header() {
             <a href="tel:8018758581" className="eyebrow text-muted-foreground">
               801.875.8581
             </a>
+            <div className="pt-2">
+              <ThemeToggle />
+            </div>
           </nav>
         </div>
       )}

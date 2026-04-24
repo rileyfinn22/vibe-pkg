@@ -3,6 +3,7 @@ import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/r
 import appCss from "../styles.css?url";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
+import { ThemeProvider } from "@/components/site/ThemeProvider";
 
 function NotFoundComponent() {
   return (
@@ -68,6 +69,12 @@ function RootShell({ children }: { children: React.ReactNode }) {
     <html lang="en" className="dark">
       <head>
         <HeadContent />
+        <script
+          // Apply persisted theme before paint to prevent flash
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('vibepkg-theme');if(t==='light'||t==='dark'){document.documentElement.classList.remove('dark','light');document.documentElement.classList.add(t);}}catch(e){}})();`,
+          }}
+        />
       </head>
       <body>
         {children}
@@ -79,12 +86,12 @@ function RootShell({ children }: { children: React.ReactNode }) {
 
 function RootComponent() {
   return (
-    <>
+    <ThemeProvider>
       <Header />
       <main className="pt-16 md:pt-20">
         <Outlet />
       </main>
       <Footer />
-    </>
+    </ThemeProvider>
   );
 }
