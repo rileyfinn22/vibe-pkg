@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Phone, Mail, AtSign, Clock } from "lucide-react";
+import contactDisplay from "@/assets/contact-display.jpg";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -33,6 +34,18 @@ function Contact() {
           Tell us about your product, volume, and timeline. Our team responds
           within one business day.
         </p>
+      </section>
+
+      {/* DISPLAY IMAGE */}
+      <section className="container-vibe pb-20 md:pb-24">
+        <div className="overflow-hidden border border-border">
+          <img
+            src={contactDisplay}
+            alt="VibePKG branded jars and tins displayed in a retail case"
+            className="w-full h-auto object-cover"
+            loading="lazy"
+          />
+        </div>
       </section>
 
       {/* PRIMARY ACTIONS */}
