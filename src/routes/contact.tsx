@@ -25,26 +25,28 @@ function Contact() {
   return (
     <>
       {/* HERO */}
-      <section className="container-vibe pt-20 md:pt-32 pb-16">
-        <p className="eyebrow text-gold mb-6">Contact</p>
-        <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] max-w-5xl">
-          Request a <span className="italic text-gold">custom quote.</span>
-        </h1>
-        <p className="mt-8 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-          Tell us about your product, volume, and timeline. Our team responds
-          within one business day.
-        </p>
-      </section>
-
-      {/* DISPLAY IMAGE */}
-      <section className="container-vibe pb-20 md:pb-24">
-        <div className="overflow-hidden border border-border">
-          <img
-            src={contactDisplay}
-            alt="VibePKG branded jars and tins displayed in a retail case"
-            className="w-full h-auto object-cover"
-            loading="lazy"
-          />
+      <section className="container-vibe pt-20 md:pt-32 pb-16 md:pb-24">
+        <div className="grid md:grid-cols-12 gap-10 md:gap-12 items-center">
+          <div className="md:col-span-6">
+            <p className="eyebrow text-gold mb-6">Contact</p>
+            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[0.95]">
+              Request a <span className="italic text-gold">custom quote.</span>
+            </h1>
+            <p className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed">
+              Tell us about your product, volume, and timeline. Our team responds
+              within one business day.
+            </p>
+          </div>
+          <div className="md:col-span-6">
+            <div className="overflow-hidden border border-border">
+              <img
+                src={contactDisplay}
+                alt="VibePKG branded jars and tins displayed in a retail case"
+                className="w-full h-auto object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
