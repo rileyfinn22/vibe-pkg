@@ -101,9 +101,6 @@ function Index() {
               We pair domestic and overseas manufacturing with in-house
               production management, design, and fulfillment.
             </p>
-            <p>
-              Whether you need 500 units of a
-            </p>
           </div>
         </div>
       </section>
