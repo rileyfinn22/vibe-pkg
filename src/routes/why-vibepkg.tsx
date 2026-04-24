@@ -25,13 +25,23 @@ export const Route = createFileRoute("/why-vibepkg")({
 
 const pillars = [
   {
+    icon: Warehouse,
+    title: "Fulfillment & Warehousing",
+    body: "Storage, kitting, and distribution from our facilities. We hold inventory so you can ship on demand.",
+  },
+  {
+    icon: CreditCard,
+    title: "Financing Terms Available",
+    body: "Flexible payment options on qualifying programs help you scale without straining cash flow.",
+  },
+  {
     icon: Palette,
     title: "Free Design Services",
     body: "Professional artwork is included with every order. Our in-house designers translate your brand into premium, production-ready packaging.",
   },
   {
     icon: Layers,
-    title: "500 to 5,000,000+ Units",
+    title: "1,000 to 5,000,000+ Units",
     body: "Run small launches or scale to mass distribution. We support boutique pilots and high-volume programs alike.",
   },
   {
@@ -48,16 +58,6 @@ const pillars = [
     icon: ShieldCheck,
     title: "Compliance & CR Support",
     body: "Child-resistant certified solutions and state-specific labeling guidance — we help you stay compliant in every market.",
-  },
-  {
-    icon: Warehouse,
-    title: "Fulfillment & Warehousing",
-    body: "Storage, kitting, and distribution from our facilities. We hold inventory so you can ship on demand.",
-  },
-  {
-    icon: CreditCard,
-    title: "Financing Terms Available",
-    body: "Flexible payment options on qualifying programs help you scale without straining cash flow.",
   },
 ];
 
