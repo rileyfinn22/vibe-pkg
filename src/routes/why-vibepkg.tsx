@@ -72,8 +72,9 @@ function WhyVibe() {
           <span className="italic text-gold">not just a vendor.</span>
         </h1>
         <p className="mt-8 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-          We exist to make cannabis brands look great on the shelf and ship on
-          time, every time. Seven reasons brands stay with VibePKG.
+          We exist to make cannabis brands look unforgettable on the shelf —
+          pairing premium craft with the operational muscle to deliver at any
+          scale. Here's why brands stay with VibePKG.
         </p>
       </section>
 
