@@ -140,7 +140,7 @@ function WhyVibe() {
               to="/products"
               className="eyebrow text-muted-foreground hover:text-gold transition-colors"
             >
-              Browse the Catalog →
+              Browse Products →
             </Link>
           </div>
         </div>
