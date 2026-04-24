@@ -71,11 +71,13 @@ function Index() {
         <div className="max-w-3xl mb-16">
           <p className="eyebrow text-gold mb-5">The Range</p>
           <h2 className="font-display text-4xl md:text-6xl leading-tight">
-            Eight categories.<br />
-            <span className="italic text-muted-foreground">One trusted source.</span>
+            A curated core,<br />
+            <span className="italic text-muted-foreground">limitless beyond it.</span>
           </h2>
           <p className="mt-6 text-muted-foreground max-w-xl">
-            Tap any category to see the full lineup, sizes, and finish options.
+            These are our most-requested categories — but our catalog runs deeper.
+            If you don't see what you need, just ask. We also offer bespoke
+            development for fully custom formats, materials, and structural design.
           </p>
         </div>
 
