@@ -112,9 +112,9 @@ function WhyVibe() {
           <img
             src={showcaseImage}
             alt="VibePKG product showcase"
-            className="h-full w-full object-cover opacity-65 dark:opacity-35"
+            className="h-full w-full object-cover opacity-90 dark:opacity-35"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background/75 via-background/35 to-transparent dark:from-background dark:via-background/70 dark:to-background/50" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/45 via-transparent to-transparent dark:from-background dark:via-background/70 dark:to-background/50" />
         </div>
         <div className="container-vibe relative z-10 py-32 md:py-44 text-center">
           <h2 className="font-display text-4xl md:text-6xl leading-tight max-w-3xl mx-auto">
