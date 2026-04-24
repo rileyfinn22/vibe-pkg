@@ -53,13 +53,9 @@ function CategoryDetail() {
       {/* HERO */}
       <section className="container-vibe pb-20 grid md:grid-cols-12 gap-10 lg:gap-16 items-end">
         <div className="md:col-span-7">
-          <p className="eyebrow text-gold mb-6">Category {category.num}</p>
           <h1 className="font-display text-5xl md:text-7xl leading-[0.95]">
             {category.title}
           </h1>
-          <p className="mt-8 text-lg text-muted-foreground leading-relaxed max-w-xl">
-            {category.tagline}
-          </p>
         </div>
         <div className="md:col-span-5">
           <div className="aspect-[4/5] overflow-hidden bg-surface">
@@ -86,27 +82,20 @@ function CategoryDetail() {
 
           <div className="md:col-span-7">
             <p className="eyebrow text-muted-foreground mb-8">
-              {category.items.length} options
+              {category.items.length + 1} options
             </p>
             <ul className="divide-y divide-border border-y border-border">
-              {category.items.map((item, i) => (
+              {[...category.items, { name: "Custom" }].map((item, i) => (
                 <li
                   key={item.name}
-                  className="flex items-baseline justify-between gap-6 py-6 group"
+                  className="flex items-baseline gap-6 py-6 group"
                 >
-                  <div className="flex items-baseline gap-6 min-w-0">
-                    <span className="eyebrow text-muted-foreground w-8 shrink-0">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <span className="font-display text-2xl md:text-3xl group-hover:text-gold transition-colors">
-                      {item.name}
-                    </span>
-                  </div>
-                  {item.spec && (
-                    <span className="text-sm text-muted-foreground text-right hidden sm:block shrink-0">
-                      {item.spec}
-                    </span>
-                  )}
+                  <span className="eyebrow text-muted-foreground w-8 shrink-0">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <span className="font-display text-2xl md:text-3xl group-hover:text-gold transition-colors">
+                    {item.name}
+                  </span>
                 </li>
               ))}
             </ul>
