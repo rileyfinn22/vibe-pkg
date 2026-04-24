@@ -15,9 +15,9 @@ export function CategoryGrid({ exclude }: { exclude?: string }) {
           <img
             src={c.image}
             alt={c.title}
-            className="absolute inset-0 h-full w-full object-cover opacity-90 dark:opacity-65 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+            className="absolute inset-0 h-full w-full object-cover opacity-100 dark:opacity-65 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-background/20 to-transparent dark:from-background dark:via-background/40 dark:to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/55 via-transparent to-transparent dark:from-background dark:via-background/40 dark:to-transparent" />
           <div className="absolute top-5 left-6 eyebrow text-gold">{c.num}</div>
           <div className="absolute bottom-0 left-0 right-0 p-6">
             <p className="font-display text-xl md:text-2xl leading-tight">{c.shortLabel}</p>
