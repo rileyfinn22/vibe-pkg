@@ -96,14 +96,12 @@ function Index() {
           </div>
           <div className="md:col-span-4 md:col-start-9 space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              VibePKG is a packaging distributor built for the modern cannabis
-              brand. We pair domestic and overseas manufacturing with in-house
-              design, compliance expertise, and fulfillment — so you ship
-              confidently, on time, every time.
+              VibePKG is a packaging partner built for the modern cannabis brand.
+              We pair domestic and overseas manufacturing with in-house
+              production management, design, and fulfillment.
             </p>
             <p>
-              Whether you need 500 units of a custom rigid box or five million
-              pre-roll tubes, we deliver the same standard of craft.
+              Whether you need 500 units of a
             </p>
           </div>
         </div>
