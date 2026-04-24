@@ -1,12 +1,16 @@
 import { Link } from "@tanstack/react-router";
+import { Logo } from "./Logo";
 
 export function Footer() {
   return (
     <footer className="border-t border-border mt-32">
       <div className="container-vibe py-16 md:py-20 grid gap-12 md:grid-cols-12">
         <div className="md:col-span-5">
-          <Link to="/" className="font-display text-3xl tracking-tight">
-            Vibe<span className="text-gold">PKG</span>
+          <Link to="/" aria-label="Vibe Packaging — Home" className="inline-flex items-center gap-3">
+            <Logo className="h-12" />
+            <span className="eyebrow text-muted-foreground border-l border-border pl-3">
+              Packaging
+            </span>
           </Link>
           <p className="mt-6 max-w-sm text-muted-foreground leading-relaxed">
             Premium packaging built for the cannabis industry. From concept to
