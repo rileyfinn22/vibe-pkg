@@ -9,12 +9,12 @@ export const Route = createFileRoute("/products")({
       {
         name: "description",
         content:
-          "Folding cartons, rigid boxes, mylar bags, glass jars, pop-tops, dram jars, CR tins, labels and compliance — full cannabis packaging catalog.",
+          "Folding cartons, rigid boxes, mylar bags, glass jars, pop-tops, dram jars, CR tins, labels and compliance — premium cannabis packaging.",
       },
       { property: "og:title", content: "Products — VibePKG" },
       {
         property: "og:description",
-        content: "The full VibePKG cannabis packaging catalog.",
+        content: "The complete VibePKG cannabis packaging lineup.",
       },
     ],
   }),
@@ -26,7 +26,7 @@ function Products() {
     <>
       {/* INTRO */}
       <section className="container-vibe pt-20 md:pt-32 pb-16">
-        <p className="eyebrow text-gold mb-6">The Catalog · 2026</p>
+        <p className="eyebrow text-gold mb-6">Products · 2026</p>
         <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] max-w-5xl">
           The full <span className="italic text-gold">range</span>,
           end to end.
