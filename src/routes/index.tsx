@@ -75,9 +75,9 @@ function Index() {
             <span className="italic text-muted-foreground">limitless beyond it.</span>
           </h2>
           <p className="mt-6 text-muted-foreground max-w-xl">
-            These are our most-requested categories — but our catalog runs deeper.
-            If you don't see what you need, just ask. We also offer bespoke
-            development for fully custom formats, materials, and structural design.
+            These are our most-requested categories - but our capabilities run deeper.
+            If you don't see what you need, just ask. We develop bespoke options
+            for fully custom formats, materials, and structural design.
           </p>
         </div>
 
