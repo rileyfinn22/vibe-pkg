@@ -32,9 +32,9 @@ function Index() {
           <img
             src={heroImage}
             alt="VibePKG cannabis packaging collection"
-            className="h-full w-full object-cover opacity-55"
+            className="h-full w-full object-cover opacity-80 dark:opacity-55"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-background/30 to-transparent dark:from-background dark:via-background/60 dark:to-background/30" />
         </div>
 
         <div className="container-vibe relative z-10 pb-20 md:pb-32 pt-32">
@@ -134,9 +134,9 @@ function Index() {
           <img
             src={showcaseImage}
             alt="VibePKG product showcase"
-            className="h-full w-full object-cover opacity-40"
+            className="h-full w-full object-cover opacity-70 dark:opacity-40"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/75 via-background/35 to-transparent dark:from-background dark:via-background/70 dark:to-background/40" />
         </div>
         <div className="container-vibe relative z-10 py-32 md:py-48 text-center">
           <p className="eyebrow text-gold mb-6">Get Started</p>
