@@ -53,33 +53,21 @@ function Contact() {
       {/* PRIMARY ACTIONS */}
       <section className="container-vibe pb-24">
         <div className="grid md:grid-cols-2 gap-4 md:gap-6">
-          <a
-            href="mailto:info@vibepkg.com?subject=VibePKG%20Quote%20Request"
-            className="group block p-10 md:p-12 border border-border hover:border-gold transition-colors"
-          >
+          <div className="block p-10 md:p-12 border border-border">
             <Mail className="text-gold mb-8" size={28} strokeWidth={1.25} />
             <p className="eyebrow text-muted-foreground mb-3">Email</p>
-            <p className="font-display text-3xl md:text-4xl group-hover:text-gold transition-colors break-all">
+            <p className="font-display text-3xl md:text-4xl break-all">
               info@vibepkg.com
             </p>
-            <p className="mt-6 eyebrow text-muted-foreground group-hover:text-gold transition-colors">
-              Send a message →
-            </p>
-          </a>
+          </div>
 
-          <a
-            href="tel:8018758581"
-            className="group block p-10 md:p-12 border border-border hover:border-gold transition-colors"
-          >
+          <div className="block p-10 md:p-12 border border-border">
             <Phone className="text-gold mb-8" size={28} strokeWidth={1.25} />
             <p className="eyebrow text-muted-foreground mb-3">Phone</p>
-            <p className="font-display text-3xl md:text-4xl group-hover:text-gold transition-colors">
+            <p className="font-display text-3xl md:text-4xl">
               801.875.8581
             </p>
-            <p className="mt-6 eyebrow text-muted-foreground group-hover:text-gold transition-colors">
-              Call our team →
-            </p>
-          </a>
+          </div>
         </div>
       </section>
 
