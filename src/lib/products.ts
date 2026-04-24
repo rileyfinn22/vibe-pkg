@@ -149,9 +149,9 @@ export const categories: Category[] = [
   {
     slug: "labels",
     num: "06",
-    shortLabel: "Labels & Finishes",
-    title: "Labels & Label Finishes",
-    tagline: "Premium pressure-sensitive",
+    shortLabel: "Labels",
+    title: "Labels",
+    tagline: "Wrap-around, paper or synthetic",
     blurb:
       "Premium pressure-sensitive wrap-around labels on paper or synthetic stock. Digital and offset print.",
     longDescription:
