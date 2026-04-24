@@ -34,16 +34,17 @@ function Index() {
             alt="VibePKG cannabis packaging collection"
             className="h-full w-full object-cover opacity-100 dark:opacity-55"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent dark:from-background dark:via-background/60 dark:to-background/30" />
+          {/* Light mode: stronger scrim from bottom for text readability over photography */}
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/75 to-background/10 dark:from-background dark:via-background/60 dark:to-background/30" />
         </div>
 
         <div className="container-vibe relative z-10 pb-20 md:pb-32 pt-32">
           
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] max-w-5xl">
+          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] max-w-5xl text-foreground drop-shadow-sm">
             Premium packaging,<br />
             <span className="italic text-gold">crafted for cannabis.</span>
           </h1>
-          <p className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed">
+          <p className="mt-8 max-w-xl text-lg text-foreground/80 dark:text-muted-foreground leading-relaxed">
             We cultivate partnerships, not shopping carts. From first concept to
             final pallet, VibePKG works alongside your brand to engineer
             packaging worth remembering - at every scale.
@@ -58,7 +59,7 @@ function Index() {
             </a>
             <Link
               to="/contact"
-              className="eyebrow text-muted-foreground hover:text-gold transition-colors border-b border-transparent hover:border-gold pb-1"
+              className="eyebrow text-foreground/70 dark:text-muted-foreground hover:text-gold transition-colors border-b border-transparent hover:border-gold pb-1"
             >
               Request a Quote
             </Link>
@@ -136,11 +137,11 @@ function Index() {
             alt="VibePKG product showcase"
             className="h-full w-full object-cover opacity-90 dark:opacity-40"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background/45 via-transparent to-transparent dark:from-background dark:via-background/70 dark:to-background/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/30 dark:from-background dark:via-background/70 dark:to-background/40" />
         </div>
         <div className="container-vibe relative z-10 py-32 md:py-48 text-center">
           <p className="eyebrow text-gold mb-6">Get Started</p>
-          <h2 className="font-display text-5xl md:text-7xl leading-tight max-w-4xl mx-auto">
+          <h2 className="font-display text-5xl md:text-7xl leading-tight max-w-4xl mx-auto text-foreground">
             Let's build something <span className="italic">unforgettable.</span>
           </h2>
           <div className="mt-12 flex flex-wrap justify-center items-center gap-8">
@@ -152,7 +153,7 @@ function Index() {
             </Link>
             <a
               href="tel:8018758581"
-              className="eyebrow text-muted-foreground hover:text-gold transition-colors"
+              className="eyebrow text-foreground/70 dark:text-muted-foreground hover:text-gold transition-colors"
             >
               or call 801.875.8581
             </a>
