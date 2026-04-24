@@ -5,10 +5,10 @@ import poptopsHero from "@/assets/products/poptops-hero.jpg";
 import glassHero from "@/assets/products/glass-hero.jpg";
 import labelsHero from "@/assets/products/labels-hero.jpg";
 import tinsHero from "@/assets/products/tins-hero.jpg";
-import complianceHero from "@/assets/products/compliance-hero.jpg";
+
 
 export type Category = {
-  slug: "cartons" | "boxes" | "mylar" | "tubes" | "glass" | "labels" | "tins" | "compliance";
+  slug: "cartons" | "boxes" | "mylar" | "tubes" | "glass" | "labels" | "tins";
   num: string;
   shortLabel: string;
   title: string;
@@ -164,6 +164,14 @@ export const categories: Category[] = [
       { name: "Foil Stamping", spec: "Hot foil accents" },
       { name: "Raised UV / Spot UV", spec: "Tactile relief" },
       { name: "Emboss / Deboss", spec: "Dimensional text" },
+      { name: "THC Warning Label", spec: "Compliance" },
+      { name: "State Compliance Label", spec: "Compliance" },
+      { name: "Lab Testing / COA Label", spec: "Compliance" },
+      { name: "Ingredient / Nutrition Label", spec: "Compliance" },
+      { name: "Tamper-Evident Seal", spec: "Compliance" },
+      { name: "Serialization / Tracking", spec: "Compliance" },
+      { name: "CR Certification Badge", spec: "Compliance" },
+      { name: "Universal Cannabis Symbol", spec: "Compliance" },
     ],
   },
   {
@@ -184,28 +192,6 @@ export const categories: Category[] = [
       { name: "Tin Tube (Slide-Out)", spec: "Slim & wide" },
       { name: "Tin Plate Jar", spec: "Wide squat, large volume" },
       { name: "Window Tin", spec: "Clear panel" },
-    ],
-  },
-  {
-    slug: "compliance",
-    num: "08",
-    shortLabel: "Compliance",
-    title: "Compliance Labels",
-    tagline: "State, lab, CR & serialization",
-    blurb:
-      "State compliance, lab testing, serialization and CR certification — our team helps navigate state-specific requirements.",
-    longDescription:
-      "Cannabis labeling is complicated — and the rules change by state. Our team helps you navigate compliance from THC warnings and state-specific symbols to lab testing, ingredient and nutrition panels, tamper-evident seals, serialization, and the universal cannabis symbol. Get to market faster, with confidence.",
-    image: complianceHero,
-    items: [
-      { name: "THC Warning Label" },
-      { name: "State Compliance Label" },
-      { name: "Lab Testing / COA Label" },
-      { name: "Ingredient / Nutrition Label" },
-      { name: "Tamper-Evident Seal" },
-      { name: "Serialization / Tracking" },
-      { name: "CR Certification Badge" },
-      { name: "Universal Cannabis Symbol" },
     ],
   },
 ];
