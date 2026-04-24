@@ -105,16 +105,6 @@ function WhyVibe() {
         </div>
       </section>
 
-      {/* QUOTE CALLOUT */}
-      <section className="border-t border-border bg-surface/40">
-        <div className="container-vibe py-24 md:py-36 max-w-4xl">
-          <p className="eyebrow text-gold mb-8">In One Line</p>
-          <p className="font-display text-3xl md:text-5xl leading-tight">
-            "Premium packaging, compliant by design, delivered at any volume —
-            <span className="italic text-gold"> that is the VibePKG standard.</span>"
-          </p>
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="relative overflow-hidden">
