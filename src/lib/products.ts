@@ -5,7 +5,7 @@ import poptopsHero from "@/assets/products/poptops-hero.jpg";
 import glassHero from "@/assets/products/glass-hero.jpg";
 import labelsHero from "@/assets/products/labels-hero.jpg";
 import tinsHero from "@/assets/products/tins-hero.jpg";
-import complianceHero from "@/assets/products/compliance-hero.jpg";
+
 
 export type Category = {
   slug: "cartons" | "boxes" | "mylar" | "tubes" | "glass" | "labels" | "tins" | "compliance";
