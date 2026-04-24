@@ -52,10 +52,6 @@ function Products() {
         <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] max-w-5xl">
           The full <span className="italic text-gold">range</span>, end to end.
         </h1>
-        <p className="mt-8 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-          Eight categories of premium cannabis packaging — each available with
-          custom print, finish, and compliance support.
-        </p>
       </section>
 
       <div className="sticky top-16 md:top-20 z-30 bg-background/85 backdrop-blur-md border-y border-border">
