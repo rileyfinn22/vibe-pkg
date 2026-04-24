@@ -28,11 +28,11 @@ function Index() {
     <>
       {/* HERO */}
       <section className="relative min-h-[88vh] flex items-end overflow-hidden">
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 overflow-hidden">
           <img
             src={heroImage}
             alt="VibePKG cannabis packaging collection"
-            className="h-full w-full object-cover opacity-100 dark:opacity-55"
+            className="h-full w-full object-cover scale-[1.03] opacity-100 dark:opacity-55"
           />
           {/* Light mode: stronger scrim from bottom for text readability over photography */}
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/75 to-background/10 dark:from-background dark:via-background/60 dark:to-background/30" />
