@@ -44,9 +44,9 @@ function Index() {
             <span className="italic text-gold">crafted for cannabis.</span>
           </h1>
           <p className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed">
-            From luxury rigid boxes to child-resistant mylar, VibePKG distributes
-            packaging at any scale — engineered for compliance, designed for the
-            shelf.
+            We cultivate partnerships, not shopping carts. From first concept to
+            final pallet, VibePKG works alongside your brand to engineer
+            packaging worth remembering — at every scale.
           </p>
           <div className="mt-12 flex flex-wrap items-center gap-8">
             <a
