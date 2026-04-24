@@ -53,13 +53,9 @@ function CategoryDetail() {
       {/* HERO */}
       <section className="container-vibe pb-20 grid md:grid-cols-12 gap-10 lg:gap-16 items-end">
         <div className="md:col-span-7">
-          <p className="eyebrow text-gold mb-6">Category {category.num}</p>
           <h1 className="font-display text-5xl md:text-7xl leading-[0.95]">
             {category.title}
           </h1>
-          <p className="mt-8 text-lg text-muted-foreground leading-relaxed max-w-xl">
-            {category.tagline}
-          </p>
         </div>
         <div className="md:col-span-5">
           <div className="aspect-[4/5] overflow-hidden bg-surface">
