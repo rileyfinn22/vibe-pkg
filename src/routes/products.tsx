@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { CategoryGrid } from "@/components/site/CategoryGrid";
-import { allFinishes } from "@/lib/products";
+import { useEffect, useState } from "react";
+import { allFinishes, categories } from "@/lib/products";
 
 export const Route = createFileRoute("/products")({
   head: () => ({
@@ -22,28 +22,125 @@ export const Route = createFileRoute("/products")({
 });
 
 function Products() {
+  const [active, setActive] = useState(categories[0]?.slug ?? "cartons");
+
+  useEffect(() => {
+    const observers = categories.map((category) => {
+      const el = document.getElementById(category.slug);
+      if (!el) return null;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setActive(category.slug);
+          }
+        },
+        { rootMargin: "-38% 0px -52% 0px" },
+      );
+
+      observer.observe(el);
+      return observer;
+    });
+
+    return () => observers.forEach((observer) => observer?.disconnect());
+  }, []);
+
   return (
     <>
-      {/* INTRO */}
       <section className="container-vibe pt-20 md:pt-32 pb-16">
         <p className="eyebrow text-gold mb-6">Products · 2026</p>
         <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] max-w-5xl">
-          The full <span className="italic text-gold">range</span>,
-          end to end.
+          The full <span className="italic text-gold">range</span>, end to end.
         </h1>
         <p className="mt-8 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-          Eight categories of premium cannabis packaging — every product
-          available with custom print, finish, and compliance support. Tap any
-          tile to explore.
+          Eight categories of premium cannabis packaging — each available with
+          custom print, finish, and compliance support.
         </p>
       </section>
 
-      {/* GRID */}
-      <section className="container-vibe pb-24">
-        <CategoryGrid />
-      </section>
+      <div className="sticky top-16 md:top-20 z-30 bg-background/85 backdrop-blur-md border-y border-border">
+        <div className="container-vibe overflow-x-auto">
+          <nav className="flex gap-8 py-4 min-w-max">
+            {categories.map((category) => (
+              <a
+                key={category.slug}
+                href={`#${category.slug}`}
+                className={`eyebrow whitespace-nowrap transition-colors ${
+                  active === category.slug
+                    ? "text-gold"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                {category.num} · {category.shortLabel}
+              </a>
+            ))}
+          </nav>
+        </div>
+      </div>
 
-      {/* FINISHES STRIP */}
+      {categories.map((category, index) => (
+        <section
+          key={category.slug}
+          id={category.slug}
+          className={`scroll-mt-32 ${index % 2 === 1 ? "bg-surface/40" : ""}`}
+        >
+          <div className="container-vibe py-24 md:py-32 grid md:grid-cols-12 gap-12 lg:gap-16">
+            <div className="md:col-span-5">
+              <div className="md:sticky md:top-40">
+                <p className="eyebrow text-gold mb-4">Category {category.num}</p>
+                <h2 className="font-display text-4xl md:text-5xl leading-tight mb-6">
+                  {category.title}
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-10 max-w-md">
+                  {category.blurb}
+                </p>
+                <div className="aspect-[4/5] overflow-hidden bg-background">
+                  <img
+                    src={category.image}
+                    alt={category.title}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div className="mt-6">
+                  <Link
+                    to="/products/$slug"
+                    params={{ slug: category.slug }}
+                    className="eyebrow border-b border-gold pb-1 hover:text-gold transition-colors"
+                  >
+                    View details →
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="md:col-span-7">
+              <ul className="divide-y divide-border border-y border-border">
+                {category.items.map((item, itemIndex) => (
+                  <li
+                    key={item.name}
+                    className="flex items-baseline justify-between gap-6 py-6 group"
+                  >
+                    <div className="flex items-baseline gap-6 min-w-0">
+                      <span className="eyebrow text-muted-foreground w-8 shrink-0">
+                        {String(itemIndex + 1).padStart(2, "0")}
+                      </span>
+                      <span className="font-display text-2xl md:text-3xl group-hover:text-gold transition-colors">
+                        {item.name}
+                      </span>
+                    </div>
+                    {item.spec && (
+                      <span className="text-sm text-muted-foreground text-right hidden sm:block shrink-0">
+                        {item.spec}
+                      </span>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+      ))}
+
       <section className="border-t border-border">
         <div className="container-vibe py-24 md:py-32">
           <p className="eyebrow text-gold mb-6">Available Finishes</p>
@@ -52,16 +149,18 @@ function Products() {
           </h2>
           <div className="hairline mb-10" />
           <div className="flex flex-wrap gap-x-10 gap-y-6">
-            {allFinishes.map((f) => (
-              <span key={f} className="font-display text-2xl md:text-3xl text-muted-foreground hover:text-gold transition-colors cursor-default">
-                {f}
+            {allFinishes.map((finish) => (
+              <span
+                key={finish}
+                className="font-display text-2xl md:text-3xl text-muted-foreground hover:text-gold transition-colors cursor-default"
+              >
+                {finish}
               </span>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
       <section className="container-vibe py-24 md:py-32 text-center">
         <p className="eyebrow text-gold mb-6">Ready when you are</p>
         <h2 className="font-display text-4xl md:text-6xl leading-tight max-w-3xl mx-auto">
