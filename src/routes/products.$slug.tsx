@@ -62,7 +62,7 @@ function CategoryDetail() {
             <img
               src={category.image}
               alt={category.title}
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover brightness-[1.3]"
             />
           </div>
         </div>
