@@ -90,7 +90,7 @@ function Products() {
                   <img
                     src={category.image}
                     alt={category.title}
-                    className="h-full w-full object-cover brightness-[2] contrast-[1.15]"
+                    className="h-full w-full object-cover"
                   />
                 </div>
               </div>
