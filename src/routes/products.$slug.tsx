@@ -62,7 +62,7 @@ function CategoryDetail() {
             <img
               src={category.image}
               alt={category.title}
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover brightness-[1.3]"
             />
           </div>
         </div>
@@ -109,7 +109,7 @@ function CategoryDetail() {
           <div className="container-vibe py-20 md:py-28">
             <p className="eyebrow text-gold mb-5">Available finishes</p>
             <div className="flex flex-wrap gap-x-8 gap-y-4">
-              {category.finishes.map((f) => (
+              {category.finishes.map((f: string) => (
                 <span
                   key={f}
                   className="font-display text-2xl md:text-3xl text-muted-foreground hover:text-gold transition-colors cursor-default"
