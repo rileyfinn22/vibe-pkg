@@ -58,10 +58,11 @@ export function Header() {
 
         <div className="flex items-center gap-3 md:gap-5">
           <a
-            href="tel:8018758581"
-            className="hidden md:inline eyebrow text-muted-foreground hover:text-gold transition-colors"
+            href="tel:8889099402"
+            className="hidden md:inline text-muted-foreground hover:text-gold transition-colors"
+            style={{ fontWeight: 700, fontSize: "1.75rem", letterSpacing: "0.02em" }}
           >
-            801.875.8581
+            888.909.9402
           </a>
           <ThemeToggle className="hidden md:inline-flex" />
 
@@ -90,8 +91,12 @@ export function Header() {
                 {l.label}
               </Link>
             ))}
-            <a href="tel:8018758581" className="eyebrow text-muted-foreground">
-              801.875.8581
+            <a
+              href="tel:8889099402"
+              className="text-muted-foreground"
+              style={{ fontWeight: 700, fontSize: "1.75rem", letterSpacing: "0.02em" }}
+            >
+              888.909.9402
             </a>
             <div className="pt-2">
               <ThemeToggle />

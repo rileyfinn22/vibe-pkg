@@ -149,10 +149,11 @@ function Index() {
               Get in Touch
             </Link>
             <a
-              href="tel:8018758581"
-              className="eyebrow text-foreground/70 dark:text-muted-foreground hover:text-gold transition-colors"
+              href="tel:8889099402"
+              className="text-foreground/70 dark:text-muted-foreground hover:text-gold transition-colors"
+              style={{ fontWeight: 700, fontSize: "1.75rem", letterSpacing: "0.02em" }}
             >
-              or call 801.875.8581
+              or call 888.909.9402
             </a>
           </div>
         </div>
