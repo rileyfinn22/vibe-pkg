@@ -64,8 +64,11 @@ function Contact() {
           <div className="block p-10 md:p-12 border border-border">
             <Phone className="text-gold mb-8" size={28} strokeWidth={1.25} />
             <p className="eyebrow text-muted-foreground mb-3">Phone</p>
-            <p className="font-display text-3xl md:text-4xl">
-              801.875.8581
+            <p
+              className="font-display font-bold"
+              style={{ fontSize: "2.5rem", lineHeight: 1.05 }}
+            >
+              888.909.9402
             </p>
           </div>
         </div>

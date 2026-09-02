@@ -31,8 +31,12 @@ export function Footer() {
           <p className="eyebrow text-muted-foreground mb-5">Get in touch</p>
           <ul className="space-y-3 text-sm">
             <li>
-              <a href="tel:8018758581" className="hover:text-gold transition-colors">
-                801.875.8581
+              <a
+                href="tel:8889099402"
+                className="hover:text-gold transition-colors"
+                style={{ fontWeight: 700, fontSize: "1.75rem", letterSpacing: "0.02em" }}
+              >
+                888.909.9402
               </a>
             </li>
             <li>
