@@ -9,7 +9,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Talk to VibePKG about custom cannabis packaging. Call 801.875.8581 or email info@vibepkg.com.",
+          "Talk to VibePKG about custom cannabis packaging. Call 888.909.9402 or email info@vibepkg.com.",
       },
       { property: "og:title", content: "Contact VibePKG" },
       {
