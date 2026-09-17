@@ -5,6 +5,7 @@ import { CategoryGrid } from "@/components/site/CategoryGrid";
 import { allFinishes } from "@/lib/products";
 
 export const Route = createFileRoute("/")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title: "VibePKG — Premium Packaging for Cannabis" },

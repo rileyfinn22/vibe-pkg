@@ -3,6 +3,7 @@ import { CategoryGrid } from "@/components/site/CategoryGrid";
 import { categories, getCategory } from "@/lib/products";
 
 export const Route = createFileRoute("/products/$slug")({
+  staticData: { sitemap: true },
   loader: ({ params }) => {
     const category = getCategory(params.slug);
     if (!category) throw notFound();

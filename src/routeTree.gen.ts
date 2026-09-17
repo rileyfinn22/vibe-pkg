@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as WhyVibepkgRouteImport } from './routes/why-vibepkg'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ProductsRouteImport } from './routes/products'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as IndexRouteImport } from './routes/index'
@@ -18,6 +19,11 @@ import { Route as ProductsSlugRouteImport } from './routes/products.$slug'
 const WhyVibepkgRoute = WhyVibepkgRouteImport.update({
   id: '/why-vibepkg',
   path: '/why-vibepkg',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProductsRoute = ProductsRouteImport.update({
@@ -45,6 +51,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/products': typeof ProductsRouteWithChildren
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/why-vibepkg': typeof WhyVibepkgRoute
   '/products/$slug': typeof ProductsSlugRoute
 }
@@ -52,6 +59,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/products': typeof ProductsRouteWithChildren
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/why-vibepkg': typeof WhyVibepkgRoute
   '/products/$slug': typeof ProductsSlugRoute
 }
@@ -60,19 +68,33 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/products': typeof ProductsRouteWithChildren
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/why-vibepkg': typeof WhyVibepkgRoute
   '/products/$slug': typeof ProductsSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/contact' | '/products' | '/why-vibepkg' | '/products/$slug'
+  fullPaths:
+    | '/'
+    | '/contact'
+    | '/products'
+    | '/sitemap.xml'
+    | '/why-vibepkg'
+    | '/products/$slug'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contact' | '/products' | '/why-vibepkg' | '/products/$slug'
+  to:
+    | '/'
+    | '/contact'
+    | '/products'
+    | '/sitemap.xml'
+    | '/why-vibepkg'
+    | '/products/$slug'
   id:
     | '__root__'
     | '/'
     | '/contact'
     | '/products'
+    | '/sitemap.xml'
     | '/why-vibepkg'
     | '/products/$slug'
   fileRoutesById: FileRoutesById
@@ -81,6 +103,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContactRoute: typeof ContactRoute
   ProductsRoute: typeof ProductsRouteWithChildren
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   WhyVibepkgRoute: typeof WhyVibepkgRoute
 }
 
@@ -91,6 +114,13 @@ declare module '@tanstack/react-router' {
       path: '/why-vibepkg'
       fullPath: '/why-vibepkg'
       preLoaderRoute: typeof WhyVibepkgRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/products': {
@@ -140,6 +170,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContactRoute: ContactRoute,
   ProductsRoute: ProductsRouteWithChildren,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   WhyVibepkgRoute: WhyVibepkgRoute,
 }
 export const routeTree = rootRouteImport

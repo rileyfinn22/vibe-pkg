@@ -5,6 +5,7 @@ import {
 import showcaseImage from "@/assets/products/showcase.jpg";
 
 export const Route = createFileRoute("/why-vibepkg")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title: "Why VibePKG — Premium Cannabis Packaging Partner" },

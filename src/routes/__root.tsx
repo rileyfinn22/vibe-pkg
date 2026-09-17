@@ -28,6 +28,7 @@ function NotFoundComponent() {
 }
 
 export const Route = createRootRoute({
+  staticData: { sitemap: false },
   head: () => ({
     meta: [
       { charSet: "utf-8" },

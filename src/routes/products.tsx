@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { allFinishes, categories } from "@/lib/products";
 
 export const Route = createFileRoute("/products")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title: "Products — VibePKG" },
