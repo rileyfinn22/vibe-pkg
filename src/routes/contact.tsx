@@ -3,6 +3,7 @@ import { Phone, Mail, AtSign, Clock } from "lucide-react";
 import contactDisplay from "@/assets/contact-display.jpg";
 
 export const Route = createFileRoute("/contact")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title: "Contact VibePKG — Request a Custom Quote" },
