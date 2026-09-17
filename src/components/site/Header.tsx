@@ -60,7 +60,7 @@ export function Header() {
           <a
             href="tel:8889099402"
             className="hidden md:inline text-muted-foreground hover:text-gold transition-colors"
-            style={{ fontWeight: 700, fontSize: "1.05rem", letterSpacing: "0.02em" }}
+            style={{ fontWeight: 700, fontSize: "0.95rem", letterSpacing: "0.02em" }}
           >
             888.909.9402
           </a>
