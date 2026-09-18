@@ -24,6 +24,7 @@ export function Footer() {
             <li><Link to="/products" className="hover:text-gold transition-colors">Products</Link></li>
             <li><Link to="/why-vibepkg" className="hover:text-gold transition-colors">Why VibePKG</Link></li>
             <li><Link to="/contact" className="hover:text-gold transition-colors">Contact</Link></li>
+            <li><a href="https://feeds.vibepkg.com" className="hover:text-gold transition-colors">Resource Hub</a></li>
           </ul>
         </div>
 
